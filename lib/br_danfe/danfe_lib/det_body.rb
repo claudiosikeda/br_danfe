@@ -46,8 +46,8 @@ module BrDanfe
 
       def column_widths
         {
-          0 => 1.60.cm, 1 => 6.10.cm, 2 => 1.05.cm, 3 => 0.60.cm, 4 => 0.70.cm, 5 => 1.05.cm, 6 => 1.20.cm,
-          7 => 1.20.cm, 8 => 1.20.cm, 9 => 1.20.cm, 10 => 1.00.cm, 11 => 1.00.cm, 12 => 0.90.cm, 13 => 0.76.cm
+          0 => 1.60.cm, 1 => 6.90.cm, 2 => 1.15.cm, 3 => 0.70.cm, 4 => 0.70.cm, 5 => 0.70.cm, 6 => 0.95.cm,
+          7 => 1.10.cm, 8 => 1.20.cm, 9 => 1.00.cm, 10 => 1.00.cm, 11 => 0.90.cm, 12 => 0.90.cm, 13 => 0.76.cm
         }
       end
 
@@ -85,7 +85,7 @@ module BrDanfe
       end
 
       def cell_text(text, options = {})
-        cell = { content: text, border_lines: [:solid], size: 6.5 }
+        cell = { content: text, border_lines: [:solid], size: 7 }
         cell.merge!(options)
         cell
       end

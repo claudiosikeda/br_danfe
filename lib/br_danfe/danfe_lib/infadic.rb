@@ -21,7 +21,7 @@ module BrDanfe
         else
           title = I18n.t "danfe.infAdic.infCpl"
           observation = generate_observation @xml["infAdic/infCpl"]
-          @pdf.ibox 2.65, 12.45, 0.75, @y_position, title, observation, { size: 6, valign: :top }
+          @pdf.ibox 2.65, 12.45, 0.75, @y_position, title, observation, { size: 8, valign: :top }
         end
 
         @pdf.ibox 2.65, 7.15, 13.20, @y_position, I18n.t("danfe.infAdic.reserved")
